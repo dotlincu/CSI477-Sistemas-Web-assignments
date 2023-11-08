@@ -1,12 +1,31 @@
 body{
     background-color: #ccc;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 .container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.form_content > div > label{
 
+.form_content > div {
+    margin-bottom: 15px;
 }
 
-.checkbox_form_content_label{
+.form_content > div > label,
+.checkbox_form_content_label,
+.checkbox_form_content_label label,
+.checkbox_form_content_label input[type="radio"] {
+    transition: color 0.3s ease-in-out;
+}
 
+.form_content > div > label:hover,
+.checkbox_form_content_label label:hover,
+.checkbox_form_content_label input[type="radio"]:hover {
+    color: #4caf50; 
 }
