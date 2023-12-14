@@ -11,12 +11,16 @@
     align-content: stretch;
     padding: 10px;
     border: 1px #000 solid;
+    margin: 5px;
+    border-radius: 8px;
 }
 
-.countDown-number{
-
+.countDown-number {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
 }
 
-.countDown-number-subtitle{
-
+.countDown-number-subtitle {
+    text-align: center;
 }

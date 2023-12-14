@@ -1,18 +1,47 @@
+/* Center the content in the container */
 .container {
     text-align: center;
 }
 
-.div_button > input{
+/* Style the button inside the div_button */
+.div_button > input {
     background-color: aqua;
     margin-top: 10px;
+    padding: 8px 15px; /* Added padding to make the button more user-friendly */
+    border: none;
+    cursor: pointer;
 }
 
-table.myTable{
-    margin-top: 10px;
+/* Style the myTable table */
+table.myTable {
+    margin-top: 20px; /* Increased the top margin to separate it a bit more from the content above */
     margin-left: auto;
     margin-right: auto;
+    border-collapse: collapse; /* Collapse the table borders */
+    width: 80%; /* Adjusted the table width */
 }
 
-table, th, td {
-    border: 1px  solid black;
-  }
+/* Style borders and spacing of the table, header, and cells */
+table.myTable, th, td {
+    border: 1px solid black;
+    padding: 12px; /* Increased padding to provide more space between cells */
+    text-align: center; /* Center the text in cells */
+}
+
+/* Style the header of the table */
+th {
+    font-weight: bold;
+    background-color: #085F63; /* Background color */
+    color: #fff; /* Text color */
+}
+
+/* Style even rows of the table */
+tr:nth-child(even) {
+    background-color: #DCEBE6;
+}
+
+/* Style hover effect on odd rows (excluding the header) */
+tr:hover:nth-child(odd) {
+    background-color: #085F63;
+    color: #fff;
+}
